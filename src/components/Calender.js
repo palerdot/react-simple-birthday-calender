@@ -81,6 +81,17 @@ class Calender extends React.Component {
       return year === this.state.year && iso_week_day === day_index
     })
 
+    // we have birthdays we need to order them
+    birthdays = _.sortBy(birthdays, (info) => {
+      let splitted = info.birthday.split("/")
+
+      let month = splitted[0]
+      let day = splitted[1]
+      let year = splitted[2]
+      // order by age
+      return moment(year + "-" + month + "-" + day).unix()      
+    })
+
     let dom = document.getElementById("day-of-week-" + day_index)
 
     // let us wait for the dom to be rendered
