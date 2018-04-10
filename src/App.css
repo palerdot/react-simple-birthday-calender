@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: steelblue;
+  height: 75px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.calender-holder {
+    display: flex;
+    flex: 1;
+    margin-top: 2em;
+}
+
+.day-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aba0ec;
+    color: white;
+    height: 50px;
+}
+
+.day-of-week {
+    display: flex;
+    flex: 1;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.birthday-display-holder {
+    text-align: left;
+}
+
+.birthday-display {
+    display: inline-block;
+}
+
+.day--empty:after {
+    content: "\02368";
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 80px;
+}
+
+
